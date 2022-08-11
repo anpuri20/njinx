@@ -1,0 +1,8 @@
+---
+- hosts: all
+  user: ansible
+  become: true
+  
+  tasks:
+    - name: install njinx server
+      action: yum name=njinx state=present
